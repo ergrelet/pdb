@@ -11,3 +11,4 @@ Here are the modifications made on this fork:
 - Add support for S_HOTPATCHFUNC, S_DEFRANGE_REGISTER_REL_INDIR, S_RECTYPE_MAX and S_RECTYPE_PAD (@CouleeApps)
 - Add support for char8_t (@ergrelet)
 - Add support for small MSF (2.0) file format (@jon-zu)
+- Fix `PointerAttributes::is_mocom`, which read the last bit of the pointer size instead of `ismocom`
