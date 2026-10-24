@@ -873,7 +873,8 @@ impl PointerAttributes {
 
     /// Returns `true` if this is a MoCOM pointer (`^` or `%`).
     pub fn is_mocom(self) -> bool {
-        (self.0 & 0x40000) != 0
+        // `ismocom` follows the 6-bit `size` field (bits 13 to 18)
+        (self.0 & 0x80000) != 0
     }
 }
 
